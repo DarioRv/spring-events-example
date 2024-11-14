@@ -32,6 +32,7 @@ public class UserServiceImpl implements IUserService {
                 new UserCreatedEvent(this, createUserDto.getEmail(), createUserDto.getPhoneNumber())
         );
 
+        System.out.println("User created successfully");
         return "User created successfully";
     }
 }
